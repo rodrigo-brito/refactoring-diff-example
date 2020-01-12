@@ -1,19 +1,8 @@
 import java.io.*;
 
 public class Example {
-	public void DoNothing() {
-		System.out.println("do nothing");
-	}
-
-	public String LetterAndNumbers() {
+	public String Numbers() {
 		String result = "";
-
-		// letters
-		result += "A";
-		result += "B";
-		result += "C";
-		result += "D";
-		result += "E";
 
 		// numbers
 		result += "1";
@@ -27,6 +16,23 @@ public class Example {
 
 	public void SayHello() {
 		System.out.println("Hello");
+	}
+
+	public String Letters() {
+		String result = "";
+
+		// letters
+		result += "A";
+		result += "B";
+		result += "C";
+		result += "D";
+		result += "E";
+
+		return result;
+	}
+
+	public void DoNothing() {
+		System.out.println("do nothing");
 	}
 
 	public static void main(String[] args) {
