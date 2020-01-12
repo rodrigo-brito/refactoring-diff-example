@@ -37,7 +37,7 @@ public class Example {
 
 	public static void main(String[] args) {
 		Example example = new Example();
-		System.out.println(example.LetterAndNumbers());
+		System.out.println(example.Letters() + example.Numbers());
 		example.SayHello();
 	}
 }
