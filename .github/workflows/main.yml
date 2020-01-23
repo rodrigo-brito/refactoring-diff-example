@@ -8,7 +8,6 @@ jobs:
       - name: Git Checkout
         uses: actions/checkout@v2
         with:
-          path: "/github/workspace/refactoring-toy-example"
           fetch-depth: 0
       - name: RefDiff
         id: ref-diff
