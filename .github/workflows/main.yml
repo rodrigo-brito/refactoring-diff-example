@@ -1,10 +1,14 @@
 on: [push, pull_request]
 
 jobs:
-  hello_world_job:
+  main:
     runs-on: ubuntu-latest
     name: Test
     steps:
+      - name: Git Checkout
+        uses: actions/checkout@v1
+        with:
+          fetch-depth: 0
       - name: RefDiff
         id: ref-diff
         uses: rodrigo-brito/refdiff-github-action@master
