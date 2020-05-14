@@ -1,19 +1,6 @@
 import java.io.*;
 
 public class Example {
-	public String Numbers() {
-		String result = "";
-
-		// numbers
-		result += "1";
-		result += "2";
-		result += "3";
-		result += "4";
-		result += "5";
-
-		return result;
-	}
-
 	public void SayHello() {
 		System.out.println("Hello");
 	}
@@ -31,13 +18,14 @@ public class Example {
 		return result;
 	}
 
-	public void DoNothing() {
+	public void DoNothingRenamed() {
 		System.out.println("do nothing");
 	}
 
 	public static void main(String[] args) {
 		Example example = new Example();
-		System.out.println(example.LetterAndNumbers());
+		MyNumbers numbers = new MyNumbers();
+		System.out.println(example.Letters() + numbers.Numbers());
 		example.SayHello();
 	}
 }
